@@ -5,7 +5,7 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.Arrays;
 
-import com.opensource.dbhelp.util.WordUtils;
+import org.apache.commons.lang3.text.WordUtils;
 
 /**
  * 记录集字段及bean属性之间的映射转换实现类。

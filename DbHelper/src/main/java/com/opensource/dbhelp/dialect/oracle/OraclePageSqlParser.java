@@ -1,7 +1,8 @@
 package com.opensource.dbhelp.dialect.oracle;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import com.opensource.dbhelp.dialect.PageSqlParser;
-import com.opensource.dbhelp.util.ArrayUtils;
 
 /**
  * Oracle 翻页接口实现

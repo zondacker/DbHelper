@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -15,7 +16,6 @@ import com.opensource.dbhelp.dbutils.handlers.MapListHandler;
 import com.opensource.dbhelp.dbutils.handlers.StringArrayHandler;
 import com.opensource.dbhelp.dbutils.handlers.StringArrayListHandler;
 import com.opensource.dbhelp.dbutils.handlers.StringMapListHandler;
-import com.opensource.dbhelp.util.ArrayUtils;
 
 /**
  * 分页查询。
