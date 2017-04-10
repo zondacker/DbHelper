@@ -37,9 +37,9 @@ DbHelper是支持定制化SQL、存储过程以及高级映射的高效性持久
 	<!-- 配置监控统计拦截的filters -->
 	<property name="filters" value="stat,log4j" />
 	<property name="proxyFilters">
-		<list>
-			<ref bean="log-filter" />
-		</list>
+	    <list>
+		<ref bean="log-filter" />
+	    </list>
 	</property>
 </bean>
 
@@ -72,7 +72,7 @@ public class TeseDao {
 	  sql.append(" WHERE 1 = 1\n");
 	     if (user != null && StringUtils.isNotEmpty(user.getName)) {
 		sql.append(" AND TU.NAME LIKE ?\n");
-				params.add("%" + param.getName().trim() + "%");
+		params.add("%" + param.getName().trim() + "%");
 	  }
 	  return dbHelper.getBeanList(sql.toString(), User.class, params.toArray());
 	}
