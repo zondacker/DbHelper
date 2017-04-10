@@ -1,13 +1,16 @@
 # DbHelper
 DbHelper是支持定制化SQL、存储过程以及高级映射的高效性持久层框架，其主要就完成2件事情：封装JDBC操作；利用反射打通Java类与SQL语句之间的相互转换。DbHelper的主要设计目的是让我们对执行SQL语句时对输入输出的数据管理更加方便，高效快捷地写出SQL和方便地获取SQL的执行结果。
 # 使用方法
-1. maven引入jar包：
+1. maven引入jar包： 
+```
 <dependency>
 	<groupId>com.opensource</groupId>
 	<artifactId>dbhelper</artifactId>
 	<version>1.0.0</version>
 </dependency>
-2. 在Spring配置文件里配置DbHelper：
+```
+2. 在Spring配置文件里配置DbHelper：  
+```
 <!-- 数据源配置,推荐使用Druid数据库连接池 -->
 <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
 	<property name="url" value="${db.jdbcUrl}" />
@@ -47,10 +50,9 @@ DbHelper是支持定制化SQL、存储过程以及高级映射的高效性持久
 <bean id="dbHelper" class="com.opensource.dbhelp.DbHelper">
 	<constructor-arg ref="transactionAwareDataSourceProxy" />
 </bean>
-3. 在DAO层注入DbHelper并使用：
-import com.cplatform.dbhelp.DbHelper;
-
-@Repository
+```
+3. 在DAO层注入DbHelper并使用：  
+```
 public class TeseDao {
 
 	@Autowired
@@ -76,3 +78,4 @@ public class TeseDao {
 	}
 
 }
+```
