@@ -1,7 +1,7 @@
 # DbHelper
 DbHelper是支持定制化SQL、存储过程以及高级映射的高效性轻量级持久层框架，其主要就完成2件事情：封装JDBC操作；利用反射打通Java类与SQL语句之间的相互转换。DbHelper的主要设计目的是让我们对执行SQL语句时对输入输出的数据管理更加方便，高效快捷地写出SQL和方便地获取SQL的执行结果。经过长期的维护，目前DbHelper支持返回的数据类型基本囊括了各种项目所需，包括分页、POJO、Array、Map、List\<String\>、List\<POJO\>、List\<Array\>、List\<Map\>等等，以及其他各种数据类型。
 # 使用方法
-1. maven引入jar包： 
+1. 克隆源码到本地maven项目，并打包到maven仓库，在具体项目中引入jar包： 
 ```
 <dependency>
    <groupId>com.opensource</groupId>
