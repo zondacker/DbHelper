@@ -91,7 +91,7 @@ public class ListPagedStatement<T> extends AbstractPagedStatement<T> {
 		}
 		if (totalCount < 1) {
 
-			return (ListPage<T>) ListPage.EMPTY_PAGE;
+			return new ListPage<T>();
 		}
 
 		// set currentPage not greater than MaxPage

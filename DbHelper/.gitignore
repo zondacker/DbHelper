@@ -1,1 +1,7 @@
-/target/
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+.DS_Store
+/target
+*.iml
+*.log
+rebel.xml

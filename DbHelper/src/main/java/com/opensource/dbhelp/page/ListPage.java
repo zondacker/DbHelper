@@ -25,11 +25,6 @@ public class ListPage<T> extends Page<T> {
 	private List<T> list;
 
 	/**
-	 * 空白页对象
-	 */
-	public static final ListPage<?> EMPTY_PAGE = new ListPage<Object>();
-
-	/**
 	 * 默认构造方法，创建空页
 	 */
 	public ListPage() {
@@ -69,7 +64,7 @@ public class ListPage<T> extends Page<T> {
 
 	/**
 	 * 取分页对象中的记录数据
-	 * 
+	 *
 	 * @return 包含记录的List对象
 	 */
 	public List<T> getList() {
